@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-vueify');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -11,6 +13,14 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+var npm = './node_modules/',
+    fonts = [
+        npm + 'font-awesome/fonts',
+        npm + 'bootstrap-sass/assets/fonts/bootstrap'
+    ]
+
+elixir(function (mix) {
+    mix.sass('app.scss')
+        .copy(fonts, 'public/fonts')
+        .browserify('app.js');
 });
