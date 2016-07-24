@@ -3,7 +3,6 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
@@ -51,7 +50,6 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 h1 .subtitle{
     display: block;
-    font-family: 'Grand Hotel',cursive;
     margin: 0 0 $margin-large-vertical;   
 }
 

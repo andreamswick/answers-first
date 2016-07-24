@@ -5,9 +5,6 @@ namespace App\Http\Controllers;
 use App\Game;
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use Illuminate\Support\Facades\Auth;
-
 class GameController extends Controller
 {
 
@@ -19,5 +16,22 @@ class GameController extends Controller
     public function store(Request $request)
     {
         return $request->user()->games()->create($request->all());
+    }
+
+    public function edit(Game $game)
+    {
+        return view('game.edit', compact('game'));
+    }
+
+    public function update(Request $request, Game $game)
+    {
+        return [
+            'result' => $game->update($request->all()),
+        ];
+    }
+
+    public function play(Game $game)
+    {
+        return view('game.play', compact('game'));
     }
 }

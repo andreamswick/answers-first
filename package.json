@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "font-awesome": "^4.6.3",
+    "jquery": "^2.1.0",
     "laravel-elixir-vueify": "^1.0.3",
     "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
     "vue-strap": "1.0.7"
   }
 }

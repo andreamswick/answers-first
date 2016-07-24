@@ -30,3 +30,4 @@ Route::get('game/{game}', 'GameController@show')->name('game.show');
 Route::delete('game/{game}', 'GameController@destroy')->name('game.destroy');
 Route::patch('game/{game}', 'GameController@update')->name('game.update');
 Route::get('game/{game}/edit', 'GameController@edit')->name('game.edit');
+Route::get('game/{game}/play', 'GameController@play')->name('game.play');

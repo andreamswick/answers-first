@@ -1,3 +1,8 @@
+$headings-font-family: 'Lobster', cursive;
+$font-family-base: 'Play', sans-serif;
+$brand: #fb551c;
+$headings-color: $brand;
+
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
 @import "gsdk.scss";
@@ -18,3 +23,25 @@ body {
   background-color: #f5f5f5;
 }
 
+.fa-btn {
+  margin-right: 6px;
+}
+
+.navbar-brand {
+  font-family: $headings-font-family;
+  color: $brand !important;
+}
+
+.panel-lobster {
+  border-color: $brand;
+}
+
+.panel-lobster > .panel-heading {
+  color: #ffffff;
+  background: lighten($brand, 10%);
+  border-color: $brand;
+}
+
+.table h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}

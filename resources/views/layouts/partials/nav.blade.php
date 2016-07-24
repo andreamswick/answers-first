@@ -10,7 +10,7 @@
             </button>
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                Jeopardy
+                Answers First
             </a>
         </div>
 

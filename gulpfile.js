@@ -17,10 +17,11 @@ var npm = './node_modules/',
     fonts = [
         npm + 'font-awesome/fonts',
         npm + 'bootstrap-sass/assets/fonts/bootstrap'
-    ]
+    ];
 
 elixir(function (mix) {
     mix.sass('app.scss')
         .copy(fonts, 'public/fonts')
         .browserify('app.js');
+        // .browserify('app.js', 'resources/assets/build/js/app.js');
 });
